@@ -23,7 +23,7 @@ clean:
   volumes_from:
     - base
 logplex:
-  image: logplex_base
+  image: classpert/logplex:1.0.0
   command: ./_build/default/rel/logplex/bin/logplex foreground
   hostname: logplex
   domainname: docker.local
@@ -81,4 +81,3 @@ test_bash:
     - base
   links:
     - db
-
