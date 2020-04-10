@@ -43,12 +43,12 @@
     ,{cloud_name, "development"}
     ,{config_redis_url, "redis://localhost:6379"}
     ,{default_redis_poll_ms, 2000} % #ms
-    ,{drain_buffer_size, 1024} % #messages
+    ,{drain_buffer_size, 100} % #messages
     ,{ets_token_reindex_step_size,
       10000} % num tokens per tab read, index write.
     ,{http_body_checksum, none} % none | md5
-    ,{http_drain_buffer_size, 1024} % messages
-    ,{http_drain_target_bytes, 102400} % bytes
+    ,{http_drain_buffer_size, 100} % messages
+    ,{http_drain_target_bytes, 10000} % bytes
     ,{http_frame_retries, 2} % #extra attempts after first
     ,{http_log_input_port, 8601} % syslog/http tcp listen port
     ,{http_log_input_acceptors, 100}

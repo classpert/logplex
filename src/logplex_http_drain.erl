@@ -719,4 +719,4 @@ idle_timeout() ->
 shrink_timeout() ->
     erlang:max(max_idle_fuzz(), logplex_app:config(http_drain_shrink_timeout, ?SHRINK_TIMEOUT)).
 
-default_buf_size() -> logplex_app:config(http_drain_buffer_size, 1024).
+default_buf_size() -> logplex_app:config(http_drain_buffer_size, 100).

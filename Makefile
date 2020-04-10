@@ -40,7 +40,7 @@ testclean:
 distclean: clean
 
 docker:
-	docker build -t classpert/logplex:1.0.0 ./
+	docker build -t classpert/logplex:1.1.0 ./
 
 docker-push: docker
-	docker push classpert/logplex:1.0.0
+	docker push classpert/logplex:1.1.0
